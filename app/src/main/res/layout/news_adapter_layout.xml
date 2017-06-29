@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/news_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="177dp"
+        android:layout_height="27dp"
+        android:background="@android:color/holo_blue_dark">
+
+        <TextView
+            android:id="@+id/dateNews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/categoryNews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="TextView" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageNews"
+            android:layout_width="177dp"
+            android:layout_height="119dp"
+            app:srcCompat="@drawable/placeholder" />
+
+        <ImageView
+            android:id="@+id/videoIcon"
+            android:layout_width="177dp"
+            android:layout_height="119dp"
+            app:srcCompat="@android:drawable/ic_media_play" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/descriptionNews"
+        android:layout_width="177dp"
+        android:layout_height="50dp"
+        android:layout_weight="0.08"
+        android:text="TextView"
+        android:textSize="12sp" />
+</LinearLayout>
